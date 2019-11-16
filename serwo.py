@@ -21,9 +21,9 @@ class Serwo():
         print("Zmieniono wypełnienie na : " +  str(new_fullfill))
 
     def serwo_up(self):
-        self.serwo.ChangeDutyCycle(8)
+        self.set_fullfill(8)
         print("Serwo zostało podniesione")
 
     def serwo_down(self):
-        self.serwo.ChangeDutyCycle(8)
+        self.set_fullfill(3)
         print("Serwo zostało opuszczone")

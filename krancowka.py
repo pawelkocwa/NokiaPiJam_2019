@@ -9,8 +9,8 @@ class Krancowka:
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
         GPIO.setup(self.channel, GPIO.IN, GPIO.PUD_UP)  # mamy resystor podciągający
-        self.krancowka = GPIO.PWM(self.channel, 50)
-        self.krancowka.start(0)
+        # self.krancowka = GPIO.PWM(self.channel, 50)
+        # self.krancowka.start(0)
 
     def check_state(self):
         current_state = GPIO.input(self.channel)
